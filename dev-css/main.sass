@@ -1,0 +1,825 @@
+@function get-vw-1366($target)
+	$vw-context: (1366 * 0.01) * 1px
+	@return ($target / $vw-context) * 1vw
+
+//dla zakresu 1024px
+@function get-vw-1024($target)
+	$vw-context: (1024 * 0.01) * 1px
+	@return ($target / $vw-context) * 1vw
+
+//dla zakresu 750px
+@function get-vw-768($target)
+	$vw-context: (768 * 0.01) * 1px
+	@return ($target / $vw-context) * 1vw
+
+//dla zakresu 490px
+@function get-vw-320($target)
+	$vw-context: (320 * 0.01) * 1px
+	@return ($target / $vw-context) * 1vw
+
+//dla zakresu 580px
+@function get-vw-580($target)
+	$vw-context: (580 * 0.01) * 1px
+	@return ($target / $vw-context) * 1vw
+
+body
+	font-family: "Gotham SSm A", "Gotham SSm B"
+	font-size: 14px
+	line-height: 1.42857
+	letter-spacing: -.5px
+	color: #333333
+	font-weight: 400
+	background-color: #FFF
+	overflow-x: hidden
+  overflow-y: hidden
+	img
+		max-width: 100%
+		height: auto
+.bg-white
+	background-color: #fff
+.lp-summer-logo
+	padding: 10px 0
+#wrapper
+	overflow-x: hidden
+header
+	background-color: #fff
+	#top-bar
+		background-color: #1D1D1B
+		color: #fff
+		font-size: 12px
+		font-weight: 300
+		padding-top: 7px
+		padding-bottom: 7px
+		@media screen and (max-width: 767px)
+			display: none
+		a
+			color: #fff
+			text-decoration: none
+			transition: .5s ease-in-out
+			&:hover, &:focus
+				opacity: .6
+		.fa-world, .fa-mail, .fa-telephone, .fa-login, .fa-cart
+			content: ''
+			display: inline-block
+			background-repeat: no-repeat
+			vertical-align: middle
+		.link_focus
+			.fa-world
+				margin-right: 9px
+				margin-top: -2px
+				width: 13px
+				height: 13px
+				background-image: url(images/world.svg)
+		.mini-menu
+			margin-bottom: 0
+			li
+				margin-left: 36px
+				padding: 0
+				@media screen and (max-width: 1023px)
+					&.mail, &.telephone
+						display: none
+			.fa-mail
+				margin-top: -2px
+				margin-right: 7px
+				width: 15px
+				height: 9px
+				background-image: url(images/mail.svg)
+			.fa-telephone
+				margin-right: 9px
+				width: 9px
+				height: 14px
+				background-image: url(images/telephone.svg)
+			.fa-login
+				margin-top: -1px
+				margin-right: 9px
+				width: 13px
+				height: 13px
+				background-image: url(images/login-new.svg)
+			.fa-cart
+				margin-right: 12px
+				margin-top: -1px
+				width: 13px
+				height: 13px
+				background-image: url(images/cart.svg)
+			.cart
+				position: relative
+				span
+					color: #fff
+					background-color: #B1B1B1
+					border-radius: 50%
+					text-align: center
+					height: 13px
+					width: 13px
+					line-height: 13px
+					font-size: 10px
+					position: absolute
+					left: 7px
+	#header
+		padding-top: 11px
+		padding-bottom: 11px
+		margin-bottom: 0
+		border: 0
+		@media screen and (max-width: 767px)
+			padding-top: 15px
+			padding-bottom: 15px
+		a
+			text-decoration: none
+			transition: .2s ease-in-out
+		.logo
+			width: 108px
+			float: left
+			@media screen and (max-width: 767px)
+				width: 78px
+		.menu_desktop
+			float: left
+			font-size: 22px
+			text-transform: uppercase
+			margin-bottom: 0
+			margin-top: 8px
+			margin-left: 40px
+			@media screen and (max-width: 1023px)
+				font-size: 20px
+				margin-top: 9px
+			@media screen and (max-width: 767px)
+				display: none
+			li
+				margin-left: 30px
+				padding: 0
+				&:nth-of-type(1)
+					margin-left: 0px
+				@media screen and (max-width: 1023px)
+					margin-left: 24px
+				a
+					color: #9C9C9C
+					&:hover, &:focus
+						color: #000
+		.navbar-toggle
+			float: left
+			padding: 4px
+			margin-right: 8px
+			margin-top: 0
+			margin-bottom: 0
+			border: 0
+			@media screen and (min-width: 768px)
+				display: none
+			.fa-bars-new
+				width: 19px
+				height: 14px
+				content: ''
+				display: inline-block
+				background-repeat: no-repeat
+				vertical-align: middle
+				background-image: url(images/hamburger_menu.svg)
+		.cart_mobile
+			float: right
+			position: relative
+			span
+				top: 0
+				right: 5px
+				color: #fff
+				background-color: #000
+				border-radius: 50%
+				width: 18px
+				height: 18px
+				position: absolute
+				text-align: center
+			.fa-cart
+				float: right
+				content: ''
+				display: inline-block
+				margin-right: 12px
+				margin-top: 5px
+				width: 23px
+				height: 23px
+				background-image: url(images/cart-mini.svg)
+			@media screen and (min-width: 768px)
+				display: none
+
+.section_footer
+	padding-left: 0
+	padding-right: 0
+	background-color: #000
+	.white-container
+		background-color: #fff
+		padding-top: 47px
+		padding-bottom: 47px
+		@media screen and (max-width: 767px)
+			display: block
+			padding-top: 20px
+			padding-bottom: 20px
+		ul
+			margin: 0
+
+	#footer-menu
+		padding-top: 32px
+		font-size: 15px
+		@media screen and (max-width: 1023px)
+			font-size: 12px
+		.foot-header
+			text-transform: uppercase
+			font-weight: 500
+			color: #989898
+		@media screen and (max-width: 767px)
+			display: none
+		ul
+			text-align: center
+			margin-bottom: 14px
+			li
+				margin: 21px 20px
+				display: inline-block
+				a
+					color: #B1B1B1
+					text-decoration: none
+					&:hover, &:focus
+						color: #B1B1B1
+	#footer-contact
+		text-align: center
+		color: #B1B1B1
+		display: block
+		@media screen and (max-width: 768px)
+      margin-top: 25px
+
+	#footer-menu-mobile
+		text-align: center
+		font-size: 20px
+		ul
+			margin-bottom: 16px
+			li
+				margin-top: 50px
+				a
+					color: #FFFFFF
+					text-decoration: none
+					transition: .5s ease-in-out
+					&:hover, &:focus
+						color: #B1B1B1
+		@media screen and (min-width: 768px)
+			display: none
+	#social-media
+		text-align: center
+		@media screen and (max-width: 767px)
+			margin-top: 61px
+		ul
+			padding-top: 34px
+			margin-bottom: 0
+			@media screen and (max-width:1023px)
+				padding-top: 47px
+			@media screen and (max-width: 767px)
+				padding-top: 0px
+			li
+				display: inline-block
+				margin-left: 17px
+				margin-right: 17px
+				@media screen and (max-width: 767px)
+					margin-left: 16px
+					margin-right: 16px
+				img
+					height: 44px
+					@media screen and (max-width: 767px)
+						height: 50px
+	#swiss_icon
+		width: 10px
+		height: auto
+		margin-top: -3px
+	#credits
+		text-align: center
+		color: #B1B1B1
+		font-size: 12px
+		margin-top: 34px
+		margin-bottom: 32px
+		@media screen and (max-width: 768px)
+			margin-top: 63px
+			margin-bottom: 30px
+
+@media screen and (max-width: 767px)
+	.desktop-view
+		display: none
+@media screen and (min-width: 768px)
+	.money-back-guarantee
+		color: #FFFFFF
+		text-align: center
+		width: 100%
+		max-width: 700px
+		@media screen and (min-width: 1024px)
+			max-width: 960px
+		margin: auto
+		.money-back-guarantee-content
+			background-color: #000000
+			margin: 0px 0px
+			padding: 19px 23px
+		.margin-link
+			margin-top: 25px
+			display: block
+		a
+			color: #FFFFFF
+			font-size: 18px
+			font-weight: 600
+			text-align: center
+		h4
+			color: #FFFFFF
+			font-size: 18px
+			font-weight: 600
+		p
+			margin-top: 19px
+			max-width: 700px
+			margin-left: auto
+			margin-right: auto
+			text-align: center
+			font-size: 18px
+			font-weight: 300
+			a
+				font-weight: 300
+				text-decoration: underline
+	.mobile-view
+		display: none
+
+.mobile-view
+	header
+		margin-bottom: 0!important
+		h2
+			margin-top: 60px!important
+			font-size: 38px!important
+			margin-bottom: 5px!important
+		h1
+			font-size: 20px!important
+			margin: 30px 0!important
+	.product-title
+		margin-top: 20px!important
+		margin-bottom: 10px
+		text-align: left
+	.main-image
+		/*max-width: 190px*/
+	.product
+		.product-price
+			text-align: center
+			.new
+				float: none !important
+			.old
+				float: none !important
+	.product-description
+		margin-top: 45px!important
+		float: left
+	.old
+		margin-right: 0!important
+		color: #ccc
+		font-size: 20px!important
+		margin-top: 5px!important
+	.new
+		margin-right: 12px
+	.tax
+		margin-top: 12px!important
+	.product-buttons
+		margin-top: 15px!important
+	.additional-info
+		margin-top: 0!important
+	.product-footer
+		margin-top: 35px!important
+		font-size: 20px!important
+		margin-bottom: 35px!important
+		span
+			font-size: 12px !important
+			display: block
+	.amazon-icon
+		width: 85px!important
+		top: 0!important
+		padding-top: 6px
+	.product-rating
+		margin-top: 20px!important
+		font-size: 15px!important
+		width: 150px
+		margin-left: auto
+		margin-right: auto
+		.score
+			font-size: 30px!important
+.amazon-icon
+  width: 85px!important
+  top: 0!important
+  padding-top: 6px
+#product
+	padding-bottom: 15px!important
+.separator-line
+	width: 100%
+	height: 2px
+	background-color: #ebebeb
+	display: block
+	@media screen and (min-width: 768px)
+		display: none
+	float: left
+	margin-bottom: 22px
+#top-header
+	background-color: #000
+	height: 70px
+
+	#logo
+		float: left
+		img
+			height: 50px
+
+	#swiss_innovation
+		float: right
+		font-size: 22px
+		color: #fff
+		font-weight: 300
+		img
+			height: 22px
+			width: auto
+
+	ul
+		list-style: none
+		padding: 0
+		margin: 10px 0px
+		line-height: 50px
+		li
+			display: inline-block
+@media screen and (max-width: 580px)
+	#top-header
+		background-color: #000
+		height: 50px
+
+		#logo
+			float: left
+			img
+				height: 30px
+
+		#swiss_innovation
+			float: right
+			font-size: 14px
+			color: #fff
+			font-weight: 300
+			img
+				height: 14px
+				width: auto
+
+		ul
+			list-style: none
+			padding: 0
+			margin: 10px 0px
+			line-height: 30px
+			li
+				display: inline-block
+.section_lp_info__h__a
+	text-decoration: none
+	color:#FFF
+.section_lp_info__h__a:hover
+	text-decoration: none
+	color:#FFF
+
+@-webkit-keyframes fadeIt
+	0%
+		background-color: #FFFFFF
+	50%
+		background-color: #AD301B
+	100%
+		background-color: #FFFFFF
+
+@-moz-keyframes fadeIt
+	0%
+		background-color: #FFFFFF; color: #000000
+	50%
+		background-color: #B81817; color: #FFFFFF
+	100%
+		background-color: #FFFFFF; color: #000000
+
+@-o-keyframes fadeIt
+	0%
+		background-color: #FFFFFF; color: #000000
+	50%
+		background-color: #B81817; color: #FFFFFF
+	100%
+		background-color: #FFFFFF; color: #000000
+
+@keyframes fadeIt
+	0%
+		background-color: #FFFFFF; color: #000000
+	50%
+		background-color: #B81817; color: #FFFFFF
+	100%
+		background-color: #FFFFFF; color: #000000
+
+
+.red-fade-out
+	padding: 0 5px
+	border-radius: 5px
+	color: red
+	background-image:none !important
+	-webkit-animation: fadeIt 3s ease-in-out
+	-moz-animation: fadeIt 3s ease-in-out
+	-o-animation: fadeIt 3s ease-in-out
+	animation: fadeIt 3s ease-in-out
+
+.count-users
+	clear: both
+	padding-top: 20px
+	padding-bottom: 15px
+	font-weight: 600
+	font-size: 13px
+
+.description-sell-icons
+	margin: 30px 0
+	img
+		width: 60px
+		height: 60px
+		display: block
+		margin: auto
+	ul
+		li
+			font-size: 16px
+			width: 30%
+			label
+				line-height: 22px
+				font-weight: 400 !important
+				width: 100%
+
+@media screen and (min-width : 1024px) and (max-width : 1365px)
+	.description-sell-icons
+		img
+  		width: 60px
+  		height: 60px
+		ul
+			li
+				font-size: 16px
+				label
+					line-height: 22px
+@media screen and (min-width : 491px) and (max-width : 750px)
+	.description-sell-icons
+		img
+			width: 60px
+			height: 60px
+		ul
+			li
+				font-size: 12px
+				label
+					line-height: 20px
+@media screen and (max-width : 490px)
+	.description-sell-icons
+		img
+			display: block
+			width: 60px
+			height: 60px
+			margin: auto !important
+			float: none !important
+		ul
+			li
+				font-weight: 500
+				label
+					width: 100%
+					text-align: center !important
+					padding-left: 0px !important
+					padding-top: 3px
+					font-size: 8px
+					color: #000
+@media screen and (max-width : 480px)
+	.description-sell-icons ul li
+		font-size: 14px
+		span
+			padding-left: 5px
+			padding-top: 0
+.money-back-guarantee
+	color: #FFFFFF
+	h4
+		color: #FFFFFF
+.how-to-use-it, .you-may-also-like
+	font-size: 18px
+	line-height: 27px
+	.title
+		font-size: 32px
+		font-weight: 600
+		margin-bottom: 0
+		text-align: center
+		color: #000
+		padding: 30px 0
+		&--black-bg
+			background: #000
+			color: #fff
+		&--text-left
+			text-align: left
+			font-size: 28px
+			@media screen and (max-width : 767px)
+				font-size: 20px
+.how-to-use-it
+  &__photo
+    position: relative
+    &--put-it
+      position: absolute
+      left: 27%
+      color: #fff
+      top: 15%
+      font-size: 30px
+      @media screen and (max-width : 767px)
+        font-size: 22px
+      @media screen and (max-width : 490px)
+        font-size: 18px
+        top: 12%
+    &--zzysh-it
+      position: absolute
+      right: 35%
+      color: #fff
+      bottom: 30%
+      font-size: 30px
+      @media screen and (max-width : 767px)
+        font-size: 22px
+      @media screen and (max-width : 490px)
+        font-size: 18px
+  &__product-description
+    max-width: 700px
+    margin: 30px auto
+    padding-left: 27px
+    list-style: none
+    li
+      position: relative
+      margin-bottom: 23px
+      line-height: 20px
+      &::before
+        position: absolute
+        left: -27px
+        top: 50%
+        transform: translatey(-50%)
+        display: block
+        width: 15px
+        height: 14px
+        content: ""
+        background-image: url(/images/list-icon.svg)
+
+@media screen and (max-width : 767px)
+  .money-back-guarantee
+    color: #FFFFFF
+    text-align: center
+    .money-back-guarantee-content
+      background-color: #000000
+      margin: 0px 0px
+      padding: 16px 20px
+    .margin-link
+      margin-top: 25px
+      display: block
+    a
+      color: #FFFFFF
+      font-size: 15px
+      font-weight: 600
+      text-align: center
+    h4
+      color: #FFFFFF
+      font-size: 15px
+      font-weight: 600
+    p
+      margin-top: 16px
+      max-width: 700px
+      margin-left: auto
+      margin-right: auto
+      text-align: center
+      font-size: 15px
+      font-weight: 300
+      a
+        font-weight: 300
+        text-decoration: underline
+  .how-to-use-it, .you-may-also-like
+    .title
+      font-size: 20px
+      padding: 15px 0
+		.baner-image
+			padding: 0
+.you-may-also-like
+  &__a
+    text-align: center
+    color: #000
+    text-transform: uppercase
+    width: 100%
+    margin: 25px auto
+    display: block
+    font-size: 22px
+    &:hover, &:visited
+      color: #ddd
+      text-decoration: none
+.sticy_buynow
+  position: fixed
+  top: -75px
+  margin: auto
+  width: 100%
+  background: #fff
+  z-index: 9999
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14)
+  transition: .3s ease-out
+  opacity: 0
+  @media screen and (max-width: 767px)
+    top: -150px
+  &__p
+    font-size: 20px
+    text-transform: uppercase
+    font-weight: 600
+    margin: 10px 0
+    line-height: 50px
+    height: 50px
+    display: inline-block
+    @media screen and (max-width: 1023px)
+      font-size: 16px
+      line-height: 40px
+      height: 40px
+    @media screen and (max-width: 767px)
+      margin-bottom: 0
+      display: block
+      width: 100%
+      line-height: 20px
+      height: 20px
+  &__button
+    border-color: #B70000
+    background-color: #B70000
+    color: #fff
+    border-width: 1px
+    border-style: solid
+    font-weight: 700
+    width: 100%
+    height: 50px
+    line-height: 50px
+    text-align: center
+    text-decoration: none
+    transition: .2s ease-in-out
+    font-size: 20px
+    text-transform: uppercase
+    display: block
+    margin: 10px 0
+    @media screen and (max-width: 1023px)
+      font-size: 16px
+      line-height: 40px
+      height: 40px
+    @media screen and (max-width: 767px)
+      margin-top: 0
+    &:hover, &:focus
+      background-color: #fff
+      color: #B70000
+      text-decoration: none
+  &__new
+    color: #B70000
+    margin-right: 12px
+    font-size: 20px
+    font-weight: 600
+    line-height: 50px
+    float: right
+    display: inline-block
+    margin: 10px 0
+    @media screen and (max-width: 1023px)
+      font-size: 16px
+      line-height: 40px
+      height: 40px
+    @media screen and (max-width: 767px)
+      margin-bottom: 0
+      margin-top: 0
+      line-height: 35px
+      height: 35px
+      float: left
+  &__old
+    font-size: 20px
+    text-decoration: line-through
+    color: #cccccc
+    float: right
+    display: inline-block
+    margin: 10px 0
+    line-height: 50px
+    margin-right: 15px
+    @media screen and (max-width: 1023px)
+      font-size: 16px
+      line-height: 40px
+      height: 40px
+    @media screen and (max-width: 767px)
+      margin-bottom: 0
+      margin-top: 0
+      line-height: 35px
+      height: 35px
+      margin-left: 15px
+      float: left
+.open-sticky
+  top: -1px
+  transition: .3s ease-in
+  opacity: 1
+.buy-now-text
+  font-size: 24px
+  font-weight: 600
+@media screen and (max-width: 580px)
+  .buy-now-text
+    font-size: 4.14vw
+.short_notification
+  opacity: 0
+  transition: .5s ease-out
+  position: fixed
+  left: 50%
+  top: 50%
+  background: rgba(255, 69, 69, 0.8)
+  color: #fff
+  padding: 10px 25px
+  transform: translate(-50%, -50%)
+  border-radius: 10px
+  font-weight: 600
+  z-index: -1
+  &--show
+    opacity: 1
+    transition: .5s ease-out
+    z-index: 999
+
+  @media screen and (max-width: 750px)
+    left: 5%
+    transform: translateY(-50%)
+    font-size: 12px
+    text-align: center
+.scroll-a
+  color: #000
+  text-decoration: none
+  &:hover, &:focus
+    color: #000
+    text-decoration: none

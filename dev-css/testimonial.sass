@@ -1,0 +1,99 @@
+.section_testimonials
+  color: #fff
+  &__foto
+    img
+      display: block
+      margin: auto
+      width: 100%
+    @media screen and (max-width: 767px)
+      order: 1
+  &__content
+    &__text
+      top: 50%
+      transform: translateY(-50%)
+      position: absolute
+      margin-left: auto
+      margin-right: auto
+      left: 0
+      right: 0
+      @media screen and (max-width: 767px)
+        top: 0
+        transform: none
+        padding: 60px 0
+        position: relative
+      &__name
+        font-size: 42px
+        font-weight: 600
+        line-height: 1em
+        margin-bottom: 15px
+        text-align: center
+        @media screen and (max-width: 767px)
+          font-size: 38px
+          margin-bottom: 25px
+      &__description
+        font-size: 22px
+        line-height: 28px
+        font-weight: 300
+        text-align: center
+        @media screen and (max-width: 767px)
+          font-size: 20px
+          line-height: 30px
+        @media screen and (min-width: 1024px)
+          width: 395px
+          margin: auto
+
+    @media screen and (max-width: 767px)
+      order: 2
+  .no-padding
+    padding-left: 0
+    padding-right: 0
+  .flex
+    display: flex
+    @media screen and (max-width: 767px)
+      flex-direction: column
+  .blue-background
+    background: #76afe8
+  .rose-background
+    background: #e69aa3
+  .black-background
+    background: #000
+  &__social-icons
+    text-align: center
+    margin-top: 30px
+    &__img
+      width: 40px
+      margin: 0 5px
+.testimonials_new
+  &__col
+    background: #f0f0f0
+    padding: 20px
+    margin: 30px 0
+    @media screen and (max-width: 767px)
+      margin: 15px 0
+    &__svg
+      width: 90px
+      height: 16px
+      @media screen and (max-width: 767px)
+        width: 84px
+      margin: 10px 0
+    &__title
+      font-size: 16px
+      font-weight: 600
+      line-height: 1em
+      @media screen and (max-width: 767px)
+        font-size: 15px
+    &__p
+      font-size: 13px
+      @media screen and (max-width: 767px)
+        font-size: 12px
+      line-height: 22px
+      font-weight: 300
+    &__tick_svg
+      height: 20px
+      float: right
+      vertical-align: middle
+      width: 20px
+    &__verified
+      font-size: 8px
+      float: right
+      margin: 4px 0px 0 5px

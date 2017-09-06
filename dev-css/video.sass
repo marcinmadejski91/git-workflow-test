@@ -1,0 +1,290 @@
+.section_video
+  padding-left: 0px
+  padding-right: 0px
+  .centered
+    position: relative
+    top: 50%
+    webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+  .play_cont_213664383_1, .play_button_213664383
+    cursor: pointer
+  .section_video
+    padding-left: 0
+    padding-right: 0
+  .img_cont_213664383_1
+    background-image: url(images/video/LP_SCREEN_Wine_EN_V2.jpg)
+    background-size: cover
+    background-position: center
+  .vimeo
+    position: relative
+    width: 100%
+    height: 41.82vw
+    .title_cont
+      position: absolute
+      padding: 4.39vw
+      z-index: 10
+      width: 100%
+      .big_title,
+      .small_title
+        color: #fff
+        text-transform: uppercase
+        float: left
+        width: 100%
+      .big_title
+        top: get-vw-1366(30px)
+        font-size: get-vw-1366(56px)
+        font-weight: bold
+        text-align: center
+      .small_title
+        top: get-vw-1366(60px)
+        font-size: get-vw-1366(32px)
+        line-height: get-vw-1366(52px)
+        font-weight: 300
+        text-align: center
+        text-transform: none
+    .play_cont
+      text-align: center
+      position: absolute
+      z-index: 10
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      -webkit-transform: translate(-50%,-50%)
+      -moz-transform: translate(-50%,-50%)
+      -ms-transform: translate(-50%,-50%)
+      .play_button
+        width: 120px
+        height: 120px
+        @media screen and (max-width : 768px)
+          width: 90px
+          height: 90px
+        opacity: .7
+        transition: 0.5s ease-in-out
+        &:hover
+          opacity: 1
+          cursor: pointer
+      .play_text
+        float: left
+        width: 100%
+        color: #fff
+        font-weight: 500
+        font-size: 20px
+        margin-top: 25px
+        text-transform: uppercase
+    .play_cont1
+      text-align: center
+      position: absolute
+      z-index: 10
+      top: 66%
+      left: 50%
+      @media screen and (max-width : 768px)
+        display: block
+      transform: translate(-50%,-50%)
+      -webkit-transform: translate(-50%,-50%)
+      -moz-transform: translate(-50%,-50%)
+      -ms-transform: translate(-50%,-50%)
+      border: 1.2px solid #fff
+      padding: 10px 50px 5px 50px
+      @media screen and (max-width : 768px)
+        padding: 10px
+        width: 200px
+      .play_button
+        width: 120px
+        height: 120px
+        opacity: .7
+        transition: 0.5s ease-in-out
+        &:hover
+          opacity: 1
+          cursor: pointer
+      .play_button1
+        display: inline-block
+        width: 32px
+        height: 32px
+        opacity: .7
+        transition: 0.5s ease-in-out
+        @media screen and (max-width : 768px)
+          float: left
+      .play_text
+        float: left
+        width: 100%
+        color: #fff
+        font-weight: 500
+        font-size: 26px
+        margin-top: 25px
+        text-transform: uppercase
+      .play_text1
+        float: right
+        margin-left: 20px
+        color: #fff
+        font-weight: 500
+        font-size: 20px
+        margin-top: 2px
+        text-transform: uppercase
+        @media screen and (max-width : 768px)
+          float: none
+          text-align: center
+          display: inline-block
+    .img_cont
+      position: absolute
+      z-index: 5
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+    .buttons_cont
+      display: none
+      position: absolute
+      z-index: 1000
+      width: 100%
+      height: 100%
+      background-color: rgba(0,0,0,.7)
+
+      .center_buttons
+        margin-top: 0
+
+      .buy_now
+        display: inline-block
+        background-color: transparent
+        border: solid 1px #FFF
+        width: 290px
+        height: 45px
+        margin: 0 25px
+        line-height: 45px
+        text-align: center
+        color: #fff
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 20px
+      .back_to_play
+        color: #fff
+        position: absolute
+        text-decoration: underline
+        top: 60%
+        left: 50%
+        height: 20px
+        transform: translatex(-50%)
+        -webkit-transform: translatex(-50%)
+        -moz-transform: translatex(-50%)
+        -ms-transform: translatex(-50%)
+      .pause_text_cont
+        color: #fff
+        text-align: center
+        position: absolute
+        top: 15%
+        left: 50%
+        transform: translatex(-50%)
+        -webkit-transform: translatex(-50%)
+        -moz-transform: translatex(-50%)
+        -ms-transform: translatex(-50%)
+        max-width: 770px
+        width: 100%
+        .header
+          display: block
+          font-size: 24px
+          text-transform: uppercase
+          font-weight: 700
+          margin-bottom: 30px
+        .text
+          font-size: 20px
+  .img_cont_213664383
+    background-image: url(images/video/Cucumber-Gin.jpg)
+    background-size: cover
+    background-position: center
+
+
+@media screen and (max-width : 768px)
+  .section_video
+    .img_cont_213664383
+      background-image: url(images/video/Cucumber-Gin_mobile.jpg)
+      background-size: cover
+      background-position: center
+
+    .img_cont_213664383_1
+      background-image: url(images/video/LP_Header_Mobile_Wine_EN_V1.jpg)
+      background-size: cover
+      background-position: center
+
+    .vimeo
+      height: 100vw
+
+      .title_cont
+        display: none
+        .big_title,
+        .small_title
+          color: #fff
+          text-transform: uppercase
+          float: left
+          width: 100%
+        .big_title
+          top: 30px
+          font-size: 7.33vw
+          font-weight: bold
+        .small_title
+          top: 60px
+          font-size: 4.67vw
+          line-height: 5.33vw
+          font-weight: 500
+
+        .play_text
+          font-size: 1.97vw
+          margin-top: 1.97vw
+
+      .buttons_cont
+        .pause_text_cont
+          .header
+            font-size: 3.2vw
+            margin-bottom: 4vw
+
+      .center_buttons
+        margin-top: -6% !important
+
+      .buy_now
+        display: inherit !important
+        width: 80% !important
+        height: 12vw !important
+        line-height: 12vw !important
+        font-size: 4.67vw !important
+        margin: 25px auto !important
+
+@media screen and (min-width: 751px) and (max-width : 1024px)
+  .section_video
+    .vimeo
+      .play_cont
+        .play_button
+          width: 12.77vw
+          height: 12.77vw
+
+        .play_text
+          font-size: 1.97vw
+          margin-top: 1.97vw
+
+      .buttons_cont
+        .pause_text_cont
+          .header
+            font-size: 3.2vw
+            margin-bottom: 4vw
+
+      .center_buttons
+        margin-top: 0
+
+      .buy_now
+        display: inline-block
+        width: 28.32vw
+        height: 4.39vw
+        margin: 0 2.44vw
+        line-height: 4.39vw
+        text-align: center
+        color: #fff
+        font-weight: 700
+        text-transform: uppercase
+        font-size: 1.95vw
+      .play_cont1
+        top: 70%
+@media screen and (max-width : 320px)
+  .section_video
+    .vimeo
+      height: 100vw
+
+.section_video
+  .play_button_213664383_1, .play_button_213664383
+    cursor: pointer

@@ -1,0 +1,82 @@
+
+/* ---------- TIMER ---------- */
+ul#countdownTablet {
+  -webkit-margin-before: 0px;
+  -webkit-padding-start: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+ul#countdownTablet li {
+  display: inline-block;
+  width: 80px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+ul#countdownTablet li span {
+  font-size: 48px;
+  font-weight: 300;
+  color: #B70000;
+  height: 60px;
+  line-height: 90px;
+  position: relative;
+}
+ul#countdownTablet li.delimiter {
+  width: 10px;
+}
+ul#countdownTablet li.delimiter span {
+  text-align: center;
+  color: #909091;
+}
+ul#countdownTablet li.delimiter p {
+  /*margin-top: 1em;*/
+}
+ul#countdownTablet li p.timeRefDays,
+ul#countdownTablet li p.timeRefHours,
+ul#countdownTablet li p.timeRefMinutes,
+ul#countdownTablet li p.timeRefSeconds {
+  /*margin-top: 1em;*/
+  color: #909091;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+ul#countdownMobile {
+  -webkit-margin-before: 0px;
+  -webkit-padding-start: 0px;
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+ul#countdownMobile li {
+  display: inline-block;
+  width: 15.79vw;
+  margin-bottom: 1.72vw;
+  text-align: center;
+}
+ul#countdownMobile li span {
+  font-size: 9.28vw;
+  font-weight: 300;
+  color: #B70000;
+  height: 10.34vw;
+  line-height: 18.52vw;
+  position: relative;
+}
+ul#countdownMobile li.delimiter {
+  width: 2.41vw;
+}
+ul#countdownMobile li.delimiter span {
+  text-align: center;
+  color: #909091;
+}
+ul#countdownMobile li.delimiter p {
+  /*margin-top: 1em;*/
+}
+ul#countdownMobile li p.timeRefDays,
+ul#countdownMobile li p.timeRefHours,
+ul#countdownMobile li p.timeRefMinutes,
+ul#countdownMobile li p.timeRefSeconds {
+  /*margin-top: 1em;*/
+  color: #909091;
+  text-transform: uppercase;
+  font-size: 2.41vw;
+}
